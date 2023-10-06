@@ -46,6 +46,8 @@ export default function CrimeChart() {
         }]
     });
 
+    const [time, setTime] = useState('');
+
     useEffect(() => {
         fetch('https://api.usa.gov/crime/fbi/cde/arrest/state/AK/all?from=2015&to=2020&API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv')
             .then(response => response.json())
@@ -64,6 +66,11 @@ export default function CrimeChart() {
                     ],
                 });
             });
+
+        const todayDate = new Date();
+        const monthName = todayDate.toLocaleString('en-US', { month: 'short' });
+        const setTimeValue = monthName + ' ' + todayDate.getDate() + ', ' + todayDate.getFullYear();
+        setTime(setTimeValue);
     }, []);
 
     return (
@@ -97,7 +104,7 @@ export default function CrimeChart() {
             <div className="footer">
                 <div className="border-wrap"></div>
                 <div className="footer-details">
-                    <div className="report-generated"> Report Generated on </div>
+                    <div className="report-generated"> Report Generated on {time}</div>
                     <div> RealAssist Property Report | Page 1 of 1</div>
                 </div>
             </div>
