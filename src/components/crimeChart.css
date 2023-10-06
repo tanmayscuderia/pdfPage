@@ -37,7 +37,6 @@
     border-radius: 12px;
     display: flex;
     justify-content: center;
-    max-height: calc(100vh - 300px);
     padding: 20px 32px;
     width: inherit;
 }
@@ -53,6 +52,10 @@
     display: flex;
     font-weight: bolder;
     justify-content: space-between;
+}
+
+.header-details {
+    padding-bottom: 10px;
 }
 
 .header-details-logo {
@@ -92,4 +95,30 @@
 .crime-bar-text {
     align-items: center;
     display: flex;
+}
+
+@media screen and (min-width: 900px) {
+    .chart {
+        max-height: calc(100vh - 300px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .crime-chart-container {
+        font-size: 12px;
+    }
+
+    .chart {
+        padding-left: 8px;
+        padding-right: 20px;
+    }
+
+    .chart-border-container {
+        padding: 4px;
+    }
+
+    .chart-border-container-left-side-text {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
 }

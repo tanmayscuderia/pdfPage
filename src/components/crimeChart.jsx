@@ -68,7 +68,7 @@ export default function CrimeChart() {
                 });
             }).then(() => {
                 setTimeout(() => {
-                    createPdf();
+                    // createPdf();
                 }, 1000);
             });
 
