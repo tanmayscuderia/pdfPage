@@ -15,6 +15,7 @@ import realAssistLogo from '../assets/images/logoMark.svg';
 import crimeLocationLogo from '../assets/images/location-share.svg';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+import { isMobile } from "react-device-detect";
 
 ChartJS.register(
     CategoryScale,
@@ -83,8 +84,17 @@ export default function CrimeChart() {
 
         html2canvas(element, { scale: 2 }).then((canvas) => {
             const imgData = canvas.toDataURL('image/jpeg');
-            const pdf = new jsPDF('p', 'mm', 'a1');
-            pdf.addImage(imgData, 'JPEG', 50, 20, 510, 497); // Adjust dimensions as needed
+            let pdf = new jsPDF('p', 'mm', 'a1')
+            if (!isMobile) {
+                // dimensions for monitors
+                pdf = new jsPDF('p', 'mm', 'a1');
+                pdf.addImage(imgData, 'JPEG', 30, 20, 510, 297); // Adjust dimensions as needed
+            } else {
+                // dimensions for phones
+                pdf = new jsPDF('p', 'mm', 'a4');
+                pdf.addImage(imgData, 'JPEG', 10, 0, 190, 290); // Adjust dimensions as needed
+
+            }
             pdf.save('Real_Assit.pdf');
         });
     }
@@ -103,7 +113,7 @@ export default function CrimeChart() {
             </div>
             <div className='chart-container'>
                 <div className='crime-bar'>
-                    <img src={crimeLocationLogo} alt="Location"></img>
+                    <img src={crimeLocationLogo} alt="Location" className='crime-location-image'></img>
                     <div className='crime-bar-text'>Crime</div>
                     <div className="border-wrap crime-bar-border-wrap"></div>
                 </div>

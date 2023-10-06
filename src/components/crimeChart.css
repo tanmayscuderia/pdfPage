@@ -73,11 +73,15 @@
 }
 
 .crime-bar {
+    align-items: center;
     display: flex;
     gap: 10px;
-    height: 30px;
     margin-bottom: 20px;
     margin-top: 10px;
+}
+
+.crime-bar img {
+    height: 30px;
 }
 
 .border-wrap {
@@ -86,15 +90,6 @@
     position: relative;
     height: 3px;
     width: 100%;
-}
-
-.crime-bar-border-wrap {
-    margin-top: 12px;
-}
-
-.crime-bar-text {
-    align-items: center;
-    display: flex;
 }
 
 @media screen and (min-width: 900px) {
