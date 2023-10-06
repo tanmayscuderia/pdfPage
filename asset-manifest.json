@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pdfPage/static/css/main.49a78f5c.css",
-    "main.js": "/pdfPage/static/js/main.e5856263.js",
+    "main.js": "/pdfPage/static/js/main.8bb00a24.js",
     "static/js/703.e082b0fa.chunk.js": "/pdfPage/static/js/703.e082b0fa.chunk.js",
     "static/js/513.e6e4ba82.chunk.js": "/pdfPage/static/js/513.e6e4ba82.chunk.js",
     "static/js/787.d61e31e5.chunk.js": "/pdfPage/static/js/787.d61e31e5.chunk.js",
@@ -10,13 +10,13 @@
     "static/media/logoMark.svg": "/pdfPage/static/media/logoMark.869df86f25d653c9db661290ccfd9a7a.svg",
     "index.html": "/pdfPage/index.html",
     "main.49a78f5c.css.map": "/pdfPage/static/css/main.49a78f5c.css.map",
-    "main.e5856263.js.map": "/pdfPage/static/js/main.e5856263.js.map",
+    "main.8bb00a24.js.map": "/pdfPage/static/js/main.8bb00a24.js.map",
     "703.e082b0fa.chunk.js.map": "/pdfPage/static/js/703.e082b0fa.chunk.js.map",
     "513.e6e4ba82.chunk.js.map": "/pdfPage/static/js/513.e6e4ba82.chunk.js.map",
     "787.d61e31e5.chunk.js.map": "/pdfPage/static/js/787.d61e31e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49a78f5c.css",
-    "static/js/main.e5856263.js"
+    "static/js/main.8bb00a24.js"
   ]
 }
