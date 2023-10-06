@@ -1,0 +1,25 @@
+.print-button-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    background: #090E24;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 56px;
+    width: 109px;
+}   
+
+.print-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+}

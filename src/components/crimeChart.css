@@ -1,0 +1,93 @@
+.crime-chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 16px;
+}
+
+.chart-container {
+    border-radius: 12px;
+}
+
+.chart-container-header {
+    height: 40px;
+    background: #E3E7F1;
+    color: #1463FF;
+    border-radius: 12px 12px 0 0;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.chart-border-container {
+    background: #F2F4F5;
+    padding: 20px 32px;
+    display: flex;
+    width: 100%;
+}
+
+.chart-border-container-left-side-text {
+    align-items: center;
+    display: flex;
+    transform: rotate(270deg);
+}
+
+.chart {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 32px;
+    max-height: calc(100vh - 200px);
+    width: 100%;
+}
+
+.header,
+.footer {
+    height: 26px;
+    width: 100%;
+}
+
+.header-details,
+.footer-details {
+    display: flex;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+.header-details-logo {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.footer-details {
+    display: flex;
+}
+
+.report-generated {
+    color: #1463FF;
+}
+
+.crime-bar {
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+    ;
+}
+
+.border-wrap {
+    background: linear-gradient(90.22deg, #005DFF 0%, #00A3FF 44.27%, #21DDFF 100%);
+    padding: 2px;
+    position: relative;
+    height: 3px;
+    width: 100%;
+}
+
+.crime-bar-border-wrap {
+    margin-top: 12px;
+}
+
+.crime-bar-text {
+    align-items: center;
+    display: flex;
+}
