@@ -114,7 +114,6 @@ export default function CrimeChart() {
             <div className='chart-container'>
                 <div className='crime-bar'>
                     <img src={crimeLocationLogo} alt="Location" className='crime-location-image'></img>
-                    <div className='crime-bar-text'>Crime</div>
                     <div className="border-wrap crime-bar-border-wrap"></div>
                 </div>
                 <div className='chart-container-header'>

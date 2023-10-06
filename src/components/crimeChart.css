@@ -77,10 +77,11 @@
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-    margin-top: 10px;
 }
 
 .crime-bar img {
+    align-items: center;
+    display: flex;
     height: 30px;
 }
 
