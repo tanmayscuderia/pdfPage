@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, } from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -13,6 +13,8 @@ import { Line } from 'react-chartjs-2';
 import './crimeChart.css';
 import realAssistLogo from '../assets/images/logoMark.svg';
 import crimeLocationLogo from '../assets/images/location-share.svg';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
 ChartJS.register(
     CategoryScale,
@@ -47,7 +49,6 @@ export default function CrimeChart() {
     });
 
     const [time, setTime] = useState('');
-
     useEffect(() => {
         fetch('https://api.usa.gov/crime/fbi/cde/arrest/state/AK/all?from=2015&to=2020&API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv')
             .then(response => response.json())
@@ -65,6 +66,10 @@ export default function CrimeChart() {
                         }
                     ],
                 });
+            }).then(() => {
+                setTimeout(() => {
+                    createPdf();
+                }, 1000);
             });
 
         const todayDate = new Date();
@@ -72,6 +77,17 @@ export default function CrimeChart() {
         const setTimeValue = monthName + ' ' + todayDate.getDate() + ', ' + todayDate.getFullYear();
         setTime(setTimeValue);
     }, []);
+
+    async function createPdf() {
+        const element = document.querySelector('body');
+
+        html2canvas(element, { scale: 2 }).then((canvas) => {
+            const imgData = canvas.toDataURL('image/jpeg');
+            const pdf = new jsPDF('p', 'mm', 'a1');
+            pdf.addImage(imgData, 'JPEG', 50, 20, 510, 497); // Adjust dimensions as needed
+            pdf.save('Real_Assit.pdf');
+        });
+    }
 
     return (
         <div className="crime-chart-container">
