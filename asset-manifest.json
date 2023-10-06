@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tanmayscuderia/pdfPage/static/css/main.49a78f5c.css",
+    "main.js": "/tanmayscuderia/pdfPage/static/js/main.37229eac.js",
+    "static/js/703.b203ff97.chunk.js": "/tanmayscuderia/pdfPage/static/js/703.b203ff97.chunk.js",
+    "static/js/513.f6a370b3.chunk.js": "/tanmayscuderia/pdfPage/static/js/513.f6a370b3.chunk.js",
+    "static/js/787.9aa30c07.chunk.js": "/tanmayscuderia/pdfPage/static/js/787.9aa30c07.chunk.js",
+    "static/media/location-share.svg": "/tanmayscuderia/pdfPage/static/media/location-share.a93f2f04da9ce084739906a024d0020c.svg",
+    "static/media/printer.svg": "/tanmayscuderia/pdfPage/static/media/printer.1414c9c74a403042b3493d0e892fcd4d.svg",
+    "static/media/logoMark.svg": "/tanmayscuderia/pdfPage/static/media/logoMark.869df86f25d653c9db661290ccfd9a7a.svg",
+    "index.html": "/tanmayscuderia/pdfPage/index.html",
+    "main.49a78f5c.css.map": "/tanmayscuderia/pdfPage/static/css/main.49a78f5c.css.map",
+    "main.37229eac.js.map": "/tanmayscuderia/pdfPage/static/js/main.37229eac.js.map",
+    "703.b203ff97.chunk.js.map": "/tanmayscuderia/pdfPage/static/js/703.b203ff97.chunk.js.map",
+    "513.f6a370b3.chunk.js.map": "/tanmayscuderia/pdfPage/static/js/513.f6a370b3.chunk.js.map",
+    "787.9aa30c07.chunk.js.map": "/tanmayscuderia/pdfPage/static/js/787.9aa30c07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49a78f5c.css",
+    "static/js/main.37229eac.js"
+  ]
+}
